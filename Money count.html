@@ -49,7 +49,8 @@
 </body>
 
 <script type="text/javascript">
-function hour() {
+function money() {
+    alert('Please, use numbers only')
     var wage = prompt('How much money do you make hourly?')
     document.getElementById('hourlyWage').innerHTML = ('$' +wage)
     var hours = prompt('How many hours do you work a week on average?')
@@ -65,12 +66,17 @@ function hour() {
     var phone = parseInt(prompt('How much is your phone bill?'))
     var gas = parseInt(prompt('How much are your monthly gas expenditures?'))
     var insurance = parseInt(prompt('How much is your car insurance?'))
+    var insurance = parseInt(prompt('How much is your car insurance?'))
+    var propinsurance = parseInt(prompt('How much is your property insurance?'))
+    var lifeinsurance = parseInt(prompt('How much is your life/health insurance?'))
+    var propertytax = parseInt(prompt('How much is your annual property tax?'))
+    var morgage = parseInt(prompt('How much is your morgage?'))
     var haircut = parseInt(prompt('How much is your haircut?'))
     var gym = parseInt(prompt('How much is your gym?'))
     var misc = parseInt(prompt('How much are all your misc bills a month?'))
     var codingcamp = parseInt(prompt('How much is your school a month?'))
     var other = parseInt(prompt('Any other expenditures a month?'))
-    var monthExpenditures = (rent + elec + phone + gas + haircut + gym + misc + codingcamp + insurance)
+    var monthExpenditures = (rent + elec + phone + gas + haircut + gym + misc + codingcamp + insurance + morgage)
     var dailyExpenditures = ((monthExpenditures)/30)
     document.getElementById('dailyExpenditures').innerHTML = ('$' + Math.floor(dailyExpenditures))
     var wAverage = dAverage*7
@@ -87,5 +93,5 @@ function hour() {
     var dailyAllowed = (clean-savings)/30
     document.getElementById('dailyAllowed').innerHTML = ('$' + Math.floor(dailyAllowed))
 }
-hour()
+money()
 </script>
