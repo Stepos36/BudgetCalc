@@ -66,8 +66,6 @@ function money() {
     var phone = parseInt(prompt('How much is your phone bill?'))
     var gas = parseInt(prompt('How much are your monthly gas expenditures?'))
     var insurance = parseInt(prompt('How much is your car insurance?'))
-    var insurance = parseInt(prompt('How much is your car insurance?'))
-    var propinsurance = parseInt(prompt('How much is your property insurance?'))
     var lifeinsurance = parseInt(prompt('How much is your life/health insurance?'))
     var propertytax = parseInt(prompt('How much is your annual property tax?'))
     var morgage = parseInt(prompt('How much is your morgage?'))
@@ -76,7 +74,7 @@ function money() {
     var misc = parseInt(prompt('How much are all your misc bills a month?'))
     var codingcamp = parseInt(prompt('How much is your school a month?'))
     var other = parseInt(prompt('Any other expenditures a month?'))
-    var monthExpenditures = (rent + elec + phone + gas + haircut + gym + misc + codingcamp + insurance + morgage)
+    var monthExpenditures = (rent + elec + phone + gas + haircut + gym + misc + codingcamp + other + insurance + lifeinsurance + propertytax + morgage)
     var dailyExpenditures = ((monthExpenditures)/30)
     document.getElementById('dailyExpenditures').innerHTML = ('$' + Math.floor(dailyExpenditures))
     var wAverage = dAverage*7
